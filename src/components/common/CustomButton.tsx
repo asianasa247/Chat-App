@@ -1,4 +1,4 @@
-import {styles} from "@/src/styles/components/common/temp11";
+import {styles} from "@/src/styles/components/common/customButtonStyles";
 import React from "react";
 import {Pressable, PressableProps, StyleProp, Text, TextStyle, View, ViewStyle} from "react-native";
 

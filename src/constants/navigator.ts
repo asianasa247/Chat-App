@@ -1,7 +1,6 @@
 export enum Navigators {
-  //   ROOT = "RootNavigator",          //
-  //   AUTH = "AuthNavigator",          // login/signup
-  //   MAIN_TAB = "MainTabNavigator",   // bottom tabs
+  STATUS = "StatusStackNavigator",
+  CALLS = "CallsStackNavigator",
   CHATS = "ChatsStackNavigator", // nested stack
   SETTINGS = "SettingsStackNavigator",
   BOTTOMTAB = "BottomTabNavigator",

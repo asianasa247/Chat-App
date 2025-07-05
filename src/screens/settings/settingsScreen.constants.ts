@@ -1,6 +1,6 @@
 import {colors} from "@/src/constants/colors";
 import {Screens} from "@/src/constants/screens";
-import {SettingStackNavigatorParamList} from "@/src/types/navigation";
+import {SettingStackNavigatorParamList} from "@/src/types/common/navigation";
 import {FontAwesome} from "@expo/vector-icons/";
 type IconName = keyof typeof FontAwesome.glyphMap;
 type ScreenName = keyof SettingStackNavigatorParamList;

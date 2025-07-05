@@ -1,4 +1,4 @@
-import {styles} from "@/src/styles/components/common/temp12";
+import {styles} from "@/src/styles/components/common/logoHeaderStyles";
 import React from "react";
 import {Image, Text} from "react-native";
 

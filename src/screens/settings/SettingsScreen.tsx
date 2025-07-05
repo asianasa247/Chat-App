@@ -5,7 +5,7 @@ import UserProfile from "@/src/components/SettingScreen/UserProfile";
 import {colors} from "@/src/constants/colors";
 import {Screens} from "@/src/constants/screens";
 import {spacing} from "@/src/constants/spacing";
-import {SettingStackNavigatorParamList} from "@/src/types/navigation";
+import {SettingStackNavigatorParamList} from "@/src/types/common/navigation";
 import {FontAwesome} from "@expo/vector-icons/";
 import {NativeStackScreenProps} from "@react-navigation/native-stack";
 import {ScrollView, StyleSheet, View} from "react-native";

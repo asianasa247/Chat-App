@@ -1,6 +1,6 @@
 import {colors} from "@/src/constants/colors";
 import {spacing} from "@/src/constants/spacing";
-import {menuItemStyle as styles} from "@/src/styles/components/common/temp13";
+import {menuItemStyle as styles} from "@/src/styles/components/common/menuItemStyles";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import React from "react";
 import {Pressable, PressableProps, Text, View} from "react-native";

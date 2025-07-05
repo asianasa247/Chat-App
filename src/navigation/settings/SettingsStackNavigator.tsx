@@ -8,7 +8,7 @@ import EditProfileScreen from "@/src/screens/settings/EditProfileScreen";
 import NotificationsScreen from "@/src/screens/settings/NotificationsScreen";
 import SettingsScreen from "@/src/screens/settings/SettingsScreen";
 import StarredMessagesScreen from "@/src/screens/settings/StarredMessagesScreen";
-import {SettingStackNavigatorParamList} from "@/src/types/navigation";
+import {SettingStackNavigatorParamList} from "@/src/types/common/navigation";
 import {createNativeStackNavigator, NativeStackNavigationOptions} from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator<SettingStackNavigatorParamList>();

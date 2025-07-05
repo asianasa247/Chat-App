@@ -1,6 +1,6 @@
 import {colors} from "@/src/constants/colors";
 import {spacing} from "@/src/constants/spacing";
-import {styles} from "@/src/styles/components/ChatListScreen/temp3";
+import {styles} from "@/src/styles/components/ChatListScreen/chatItemActionsStyles";
 import {useActionSheet} from "@expo/react-native-action-sheet";
 import {Feather, FontAwesome} from "@expo/vector-icons";
 import React from "react";

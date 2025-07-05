@@ -34,14 +34,6 @@ export const styles = StyleSheet.create({
     columnGap: spacing.s12,
   },
 
-  actBtnContainer: {
-    width: spacing.s36,
-    height: spacing.s36,
-    borderRadius: spacing.s36,
-    backgroundColor: colors.lavenderMist,
-    alignItems: "center",
-    justifyContent: "center",
-  },
   containerMore: {
     marginLeft: spacing.s15,
     paddingTop: spacing.s12,

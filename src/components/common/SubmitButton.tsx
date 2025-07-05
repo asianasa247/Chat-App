@@ -1,4 +1,4 @@
-import {styles} from "@/src/styles/components/common/temp14";
+import {styles} from "@/src/styles/components/common/submitButtonStyles";
 import React from "react";
 import {Pressable, PressableProps, StyleProp, Text, ViewStyle} from "react-native";
 

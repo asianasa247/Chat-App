@@ -1,4 +1,4 @@
-import {styles} from "@/src/styles/components/LoginScreen/temp15";
+import {styles} from "@/src/styles/components/LoginScreen/formInputStyle";
 import React, {useState} from "react";
 import {StyleProp, Text, TextInput, View, ViewStyle} from "react-native";
 import {colors} from "../../constants/colors";

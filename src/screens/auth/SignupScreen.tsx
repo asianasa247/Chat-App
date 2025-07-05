@@ -1,4 +1,4 @@
-import {styles} from "@/src/styles/screens/temp21";
+import {styles} from "@/src/styles/screens/signupScreenStyles";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import {NativeStackScreenProps} from "@react-navigation/native-stack";
 import React, {useState} from "react";
@@ -14,7 +14,7 @@ import {colors} from "../../constants/colors";
 import {Screens} from "../../constants/screens";
 import {spacing} from "../../constants/spacing";
 
-import {AuthStackNavigatorParamList} from "../../types/navigation";
+import {AuthStackNavigatorParamList} from "../../types/common/navigation";
 
 type ScreenProps = NativeStackScreenProps<AuthStackNavigatorParamList, Screens.SIGNUP>;
 

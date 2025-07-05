@@ -4,7 +4,7 @@ import SignupScreen from "@/src/screens/auth/SignupScreen";
 import {createNativeStackNavigator, NativeStackNavigationOptions} from "@react-navigation/native-stack";
 import {colors} from "../../constants/colors";
 import {Screens} from "../../constants/screens";
-import {AuthStackNavigatorParamList} from "../../types/navigation";
+import {AuthStackNavigatorParamList} from "../../types/common/navigation";
 
 const Stack = createNativeStackNavigator<AuthStackNavigatorParamList>();
 

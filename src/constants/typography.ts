@@ -15,43 +15,77 @@ const round = (value: number, decimals = 1) => Number(value.toFixed(decimals));
 
 export const typography = {
   fontSizes: {
-    f8: round(wp("2.1%")), // ≈ 8px
-    f10: round(wp("2.6%")), // ≈ 10px
-    f12: round(wp("3.2%")), // ≈ 12px
-    f14: round(wp("3.7%")), // ≈ 14px
-    f16: round(wp("4.2%")), // ≈ 16px
-    f18: round(wp("4.7%")), // ≈ 18px
-    f20: round(wp("5.3%")), // ≈ 20px
-    f22: round(wp("5.8%")), // ≈ 22px
-    f24: round(wp("6.3%")), // ≈ 24px
-    f26: round(wp("6.8%")), // ≈ 26px
-    f28: round(wp("7.4%")), // ≈ 28px
-    f30: round(wp("7.9%")), // ≈ 30px
-    f32: round(wp("8.4%")), // ≈ 32px
-    f34: round(wp("8.9%")), // ≈ 34px
-    f36: round(wp("9.5%")), // ≈ 36px
-    f38: round(wp("10%")), // ≈ 38px
-    f40: round(wp("10.5%")), // ≈ 40px
-    f42: round(wp("11.1%")), // ≈ 42px
+    f8: round(wp("2.1%")),
+    f9: round(wp("2.35%")),
+    f10: round(wp("2.6%")),
+    f11: round(wp("2.9%")),
+    f12: round(wp("3.2%")),
+    f13: round(wp("3.45%")),
+    f14: round(wp("3.7%")),
+    f15: round(wp("3.95%")),
+    f16: round(wp("4.2%")),
+    f17: round(wp("4.45%")),
+    f18: round(wp("4.7%")),
+    f19: round(wp("5.0%")),
+    f20: round(wp("5.3%")),
+    f21: round(wp("5.55%")),
+    f22: round(wp("5.8%")),
+    f23: round(wp("6.05%")),
+    f24: round(wp("6.3%")),
+    f25: round(wp("6.55%")),
+    f26: round(wp("6.8%")),
+    f27: round(wp("7.1%")),
+    f28: round(wp("7.4%")),
+    f29: round(wp("7.65%")),
+    f30: round(wp("7.9%")),
+    f31: round(wp("8.15%")),
+    f32: round(wp("8.4%")),
+    f33: round(wp("8.65%")),
+    f34: round(wp("8.9%")),
+    f35: round(wp("9.2%")),
+    f36: round(wp("9.5%")),
+    f37: round(wp("9.75%")),
+    f38: round(wp("10%")),
+    f39: round(wp("10.25%")),
+    f40: round(wp("10.5%")),
+    f41: round(wp("10.8%")),
+    f42: round(wp("11.1%")),
   },
   lineHeights: {
     f8: round(wp("2.1%") * 1.4),
+    f9: round(wp("2.35%") * 1.4),
     f10: round(wp("2.6%") * 1.4),
+    f11: round(wp("2.9%") * 1.4),
     f12: round(wp("3.2%") * 1.4),
+    f13: round(wp("3.45%") * 1.4),
     f14: round(wp("3.7%") * 1.4),
+    f15: round(wp("3.95%") * 1.4),
     f16: round(wp("4.2%") * 1.4),
+    f17: round(wp("4.45%") * 1.4),
     f18: round(wp("4.7%") * 1.4),
+    f19: round(wp("5.0%") * 1.4),
     f20: round(wp("5.3%") * 1.4),
+    f21: round(wp("5.55%") * 1.4),
     f22: round(wp("5.8%") * 1.4),
+    f23: round(wp("6.05%") * 1.4),
     f24: round(wp("6.3%") * 1.4),
+    f25: round(wp("6.55%") * 1.4),
     f26: round(wp("6.8%") * 1.4),
+    f27: round(wp("7.1%") * 1.4),
     f28: round(wp("7.4%") * 1.4),
+    f29: round(wp("7.65%") * 1.4),
     f30: round(wp("7.9%") * 1.4),
+    f31: round(wp("8.15%") * 1.4),
     f32: round(wp("8.4%") * 1.4),
+    f33: round(wp("8.65%") * 1.4),
     f34: round(wp("8.9%") * 1.4),
+    f35: round(wp("9.2%") * 1.4),
     f36: round(wp("9.5%") * 1.4),
+    f37: round(wp("9.75%") * 1.4),
     f38: round(wp("10%") * 1.4),
+    f39: round(wp("10.25%") * 1.4),
     f40: round(wp("10.5%") * 1.4),
+    f41: round(wp("10.8%") * 1.4),
     f42: round(wp("11.1%") * 1.4),
   },
 };

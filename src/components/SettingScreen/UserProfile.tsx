@@ -1,8 +1,8 @@
 import {colors} from "@/src/constants/colors";
 import {Screens} from "@/src/constants/screens";
 import {spacing} from "@/src/constants/spacing";
-import {userProfileStyle as styles} from "@/src/styles/screens/temp20";
-import {SettingStackNavigatorParamList} from "@/src/types/navigation";
+import {userProfileStyle as styles} from "@/src/styles/screens/settingsScreenStyles";
+import {SettingStackNavigatorParamList} from "@/src/types/common/navigation";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import {useNavigation} from "@react-navigation/native";
 import {NativeStackNavigationProp} from "@react-navigation/native-stack";

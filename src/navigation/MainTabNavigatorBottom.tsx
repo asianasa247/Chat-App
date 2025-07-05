@@ -4,19 +4,23 @@ import {colors} from "../constants/colors";
 import {Navigators} from "../constants/navigator";
 import {Screens} from "../constants/screens";
 import {FontFamily} from "../constants/typography";
-import CallsScreen from "../screens/calls/CallsScreen";
 import CameraScreen from "../screens/camera/CameraScreen";
-import StatusScreen from "../screens/status/StatusScreen";
-import {BottomTabNavigatorParamList} from "../types/navigation";
+import {BottomTabNavigatorParamList} from "../types/common/navigation";
+import CallsStackNavigator from "./calls/CallsStackNavigator";
 import ChatsStackNavigator from "./chats/ChatsStackNavigator";
 import SettingsStackNavigator from "./settings/SettingsStackNavigator";
+import StatusStackNavigator from "./status/StatusStackNavigator";
 const BottomTab = createBottomTabNavigator<BottomTabNavigatorParamList, Navigators.BOTTOMTAB>();
 
 const MainTabNavigatorBottom = () => {
   return (
     <BottomTab.Navigator screenOptions={bottomTabScreensOptions} id={Navigators.BOTTOMTAB}>
-      <BottomTab.Screen name={Screens.STATUS} component={StatusScreen} options={statusScreenOptions} />
-      <BottomTab.Screen name={Screens.CALLS} component={CallsScreen} options={callsScreenOptions} />
+      <BottomTab.Screen
+        name={Navigators.STATUS}
+        component={StatusStackNavigator}
+        options={statusStackNavigatorOptions}
+      />
+      <BottomTab.Screen name={Navigators.CALLS} component={CallsStackNavigator} options={callsStackNavigatorOptions} />
       <BottomTab.Screen name={Screens.CAMERA} component={CameraScreen} options={cameraScreenOptions} />
       <BottomTab.Screen name={Navigators.CHATS} component={ChatsStackNavigator} options={chatsStackNavigatorOptions} />
       <BottomTab.Screen
@@ -45,12 +49,12 @@ const bottomTabScreensOptions: BottomTabNavigationOptions = {
   ],
 };
 
-const statusScreenOptions: BottomTabNavigationOptions = {
+const statusStackNavigatorOptions: BottomTabNavigationOptions = {
   title: "Status",
   tabBarIcon: ({color, size}) => <Ionicons name="ellipse-outline" size={size} color={color} />,
 };
 
-const callsScreenOptions: BottomTabNavigationOptions = {
+const callsStackNavigatorOptions: BottomTabNavigationOptions = {
   title: "Calls",
   tabBarIcon: ({color, size}) => <Ionicons name="call-outline" size={size} color={color} />,
 };

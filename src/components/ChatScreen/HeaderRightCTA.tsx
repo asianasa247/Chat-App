@@ -1,6 +1,6 @@
 import {colors} from "@/src/constants/colors";
 import {spacing} from "@/src/constants/spacing";
-import {styles} from "@/src/styles/components/ChatScreen/temp7";
+import {styles} from "@/src/styles/components/ChatScreen/headerRightCTAStyles";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import {View} from "react-native";
 import MyPressable from "../common/MyPressable";

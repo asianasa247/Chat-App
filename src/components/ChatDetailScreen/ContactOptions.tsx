@@ -1,6 +1,6 @@
 import {colors} from "@/src/constants/colors";
 import {spacing} from "@/src/constants/spacing";
-import {styles} from "@/src/styles/components/ChatDetailScreen/temp2";
+import {styles} from "@/src/styles/components/common/contactOptionsStyles";
 import {FontAwesome, MaterialCommunityIcons as MCI} from "@expo/vector-icons/";
 import React from "react";
 import {View} from "react-native-animatable";

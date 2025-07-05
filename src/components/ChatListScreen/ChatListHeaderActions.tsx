@@ -1,5 +1,5 @@
 import {colors} from "@/src/constants/colors";
-import {styles} from "@/src/styles/components/ChatListScreen/temp6";
+import {styles} from "@/src/styles/components/ChatListScreen/chatListHeaderActionsStyles";
 import React from "react";
 import {Text, View} from "react-native";
 import MyPressable from "../common/MyPressable";

@@ -1,5 +1,5 @@
 import {colors} from "@/src/constants/colors";
-import {styles} from "@/src/styles/components/ChatListScreen/temp5";
+import {styles} from "@/src/styles/components/ChatListScreen/chatListEditActionsBarStyles";
 import {useState} from "react";
 import {Text} from "react-native";
 import {View as AnimatedView} from "react-native-animatable";

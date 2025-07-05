@@ -1,7 +1,7 @@
 import {colors} from "@/src/constants/colors";
 import {spacing} from "@/src/constants/spacing";
 import {typography} from "@/src/constants/typography";
-import {styles} from "@/src/styles/components/ChatListScreen/temp4";
+import {styles} from "@/src/styles/components/ChatListScreen/chatItemStyles";
 import {MaterialCommunityIcons as MCI} from "@expo/vector-icons";
 import Entypo from "@expo/vector-icons/Entypo";
 import React from "react";

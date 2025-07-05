@@ -1,5 +1,6 @@
 export const colors = {
   primary: "#E8560C",
+  dangerSignal: "#FF3B30",
   adobeOrange: "#ea966b",
   bgChatScreen: "#eebca3",
   bgSenderMsg: "#dcf7c5",

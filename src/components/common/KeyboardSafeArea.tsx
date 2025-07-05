@@ -1,17 +1,19 @@
 import {colors} from "@/src/constants/colors";
 import {StatusBar} from "expo-status-bar";
 import React from "react";
-import {KeyboardAvoidingView, Platform, SafeAreaView, StyleSheet} from "react-native";
+import {KeyboardAvoidingView, Platform, StyleSheet, View} from "react-native";
+import {useSafeAreaInsets} from "react-native-safe-area-context";
 
 type Props = {
   children: React.ReactNode;
 };
 
 const KeyboardSafeArea = ({children}: Props) => {
+  const insets = useSafeAreaInsets();
   return (
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === "ios" ? "padding" : undefined}>
       <StatusBar style="dark" backgroundColor={colors.culturedPearl} />
-      <SafeAreaView style={styles.container}>{children}</SafeAreaView>
+      <View style={[styles.container, {paddingBottom: insets.bottom}]}>{children}</View>
     </KeyboardAvoidingView>
   );
 };

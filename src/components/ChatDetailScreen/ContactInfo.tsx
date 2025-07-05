@@ -1,18 +1,14 @@
 import {colors} from "@/src/constants/colors";
 import {spacing} from "@/src/constants/spacing";
-import {styles} from "@/src/styles/components/ChatDetailScreen/temp1";
+import {styles} from "@/src/styles/components/common/contactInfoStyles";
+import {ActionIconButtonProps} from "@/src/types/common/actionIconButton";
 import {MaterialCommunityIcons as MCI} from "@expo/vector-icons/";
 import React from "react";
 import {Text, View} from "react-native";
-import MyPressable from "../common/MyPressable";
-type ActionButtonProps = {
-  id?: number;
-  children: React.ReactElement;
-  onPress: () => void;
-};
+import {ActionIconButton} from "../common/ActionIconButton";
 
 const ContactInfo = () => {
-  const actionButtonList: ActionButtonProps[] = [
+  const actionButtonList: ActionIconButtonProps[] = [
     {
       id: 1,
       children: <MCI name="chat" size={spacing.s18} color={colors.primary} />,
@@ -38,9 +34,9 @@ const ContactInfo = () => {
         </View>
         <View style={styles.actionsContainer}>
           {actionButtonList.map((item) => (
-            <ActionButton key={item.id} onPress={item.onPress}>
+            <ActionIconButton key={item.id} onPress={item.onPress}>
               {item.children}
-            </ActionButton>
+            </ActionIconButton>
           ))}
         </View>
       </View>
@@ -51,14 +47,6 @@ const ContactInfo = () => {
         </View>
       </View>
     </>
-  );
-};
-
-const ActionButton = ({children, onPress}: ActionButtonProps) => {
-  return (
-    <MyPressable style={styles.actBtnContainer} onPress={onPress}>
-      {children}
-    </MyPressable>
   );
 };
 

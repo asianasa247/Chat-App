@@ -1,4 +1,4 @@
-import {styles} from "@/src/styles/components/ChatScreen/temp8";
+import {styles} from "@/src/styles/components/ChatScreen/headerUserInfoStyles";
 import React from "react";
 import {Image, Text, View} from "react-native";
 import MyPressable from "../common/MyPressable";

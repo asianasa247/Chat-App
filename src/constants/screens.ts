@@ -4,7 +4,8 @@ export enum Screens {
   SIGNUP = "SignupScreen",
   STATUS = "StatusScreen",
   CAMERA = "CameraScreen",
-  CALLS = "CallsScreen",
+  //in calls
+  CALLLIST = "CallListScreen",
   //in setting
   SETTINGS = "SettingsScreen",
   EDITPROFILE = "EditProfileScreen",
@@ -15,6 +16,7 @@ export enum Screens {
   DATASTORAGE = "DataStorageScreen",
   //in chats
   CHAT = "ChatScreen",
-  CHATDETAIL = "ChatDetailScreen",
   CHATLIST = "ChatListScreen",
+  //shared screen
+  CONTACTDETAIL = "ContactDetailScreen",
 }

@@ -1,6 +1,6 @@
 import {colors} from "@/src/constants/colors";
 import {spacing} from "@/src/constants/spacing";
-import {styles} from "@/src/styles/components/ChatScreen/temp10";
+import {styles} from "@/src/styles/components/ChatScreen/messageComposerStyles";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import React, {useState} from "react";
 import {TextInput, View} from "react-native";

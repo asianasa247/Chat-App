@@ -1,4 +1,4 @@
-import {styles} from "@/src/styles/screens/temp19";
+import {styles} from "@/src/styles/screens/loginScreenStyles";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import type {NativeStackScreenProps} from "@react-navigation/native-stack";
 import React, {useState} from "react";
@@ -13,7 +13,7 @@ import LanguageDropdown from "../../components/LoginScreen/LanguageDropdown";
 import {colors} from "../../constants/colors";
 import {Screens} from "../../constants/screens";
 import {spacing} from "../../constants/spacing";
-import {AuthStackNavigatorParamList} from "../../types/navigation";
+import {AuthStackNavigatorParamList} from "../../types/common/navigation";
 
 type ScreenProps = NativeStackScreenProps<AuthStackNavigatorParamList, Screens.LOGIN>;
 

@@ -2,15 +2,14 @@ import MessageBubble from "@/src/components/ChatListScreen/MessageBubble";
 import HeaderRightCTA from "@/src/components/ChatScreen/HeaderRightCTA";
 import HeaderUserInfo from "@/src/components/ChatScreen/HeaderUserInfo";
 import MessageComposer from "@/src/components/ChatScreen/MessageComposer";
-import BottomSpacer from "@/src/components/common/BottomSpacer";
 import KeyboardSafeArea from "@/src/components/common/KeyboardSafeArea";
 import {colors} from "@/src/constants/colors";
 import {Navigators} from "@/src/constants/navigator";
 import {Screens} from "@/src/constants/screens";
 import {spacing} from "@/src/constants/spacing";
-import {styles} from "@/src/styles/screens/temp18";
-import {Message} from "@/src/types/message";
-import {ChatsStackNavigatorParamList} from "@/src/types/navigation";
+import {styles} from "@/src/styles/screens/chatScreenStyles";
+import {Message} from "@/src/types/common/message";
+import {ChatsStackNavigatorParamList} from "@/src/types/common/navigation";
 import {HeaderBackButton} from "@react-navigation/elements";
 import {useFocusEffect} from "@react-navigation/native";
 import {NativeStackScreenProps} from "@react-navigation/native-stack";
@@ -131,7 +130,7 @@ const ChatScreen = ({navigation}: ScreenProps) => {
   useFocusEffect(
     useCallback(() => {
       const handleNavigateChatDetailScreen = () => {
-        navigation.navigate(Screens.CHATDETAIL);
+        navigation.navigate(Screens.CONTACTDETAIL);
       };
       navigation.setOptions({
         headerTitle: () => <HeaderUserInfo onPress={handleNavigateChatDetailScreen} />,
@@ -152,8 +151,8 @@ const ChatScreen = ({navigation}: ScreenProps) => {
         showsVerticalScrollIndicator={false}
         style={styles.screen}
         contentContainerStyle={{paddingVertical: spacing.s20}}
+        keyboardShouldPersistTaps="handled"
       />
-      <BottomSpacer />
       <MessageComposer />
     </KeyboardSafeArea>
   );

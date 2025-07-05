@@ -5,14 +5,14 @@ import MyPressable from "@/src/components/common/MyPressable";
 import {colors} from "@/src/constants/colors";
 import {Screens} from "@/src/constants/screens";
 import {styles} from "@/src/styles/screens/chatDetailScreenStyles";
-import {ChatsStackNavigatorParamList} from "@/src/types/common/navigation";
+import {ContactDetailScreenParamList} from "@/src/types/common/navigation";
 import {HeaderBackButton} from "@react-navigation/elements";
 import {NativeStackScreenProps} from "@react-navigation/native-stack";
 import {useLayoutEffect} from "react";
 import {Image, ScrollView, Text} from "react-native";
-type ScreenProps = NativeStackScreenProps<ChatsStackNavigatorParamList, Screens.CHATDETAIL>;
+type ScreenProps = NativeStackScreenProps<ContactDetailScreenParamList, Screens.CONTACTDETAIL>;
 
-const ChatDetailScreen = ({navigation}: ScreenProps) => {
+const ContactDetailScreen = ({navigation}: ScreenProps) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
@@ -44,4 +44,4 @@ const ChatDetailScreen = ({navigation}: ScreenProps) => {
   );
 };
 
-export default ChatDetailScreen;
+export default ContactDetailScreen;
